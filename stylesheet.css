@@ -9,6 +9,8 @@ body {
 	overflow-x:hidden;
 }
 .container {
+	position: relative;
+	width: 100vw;
 	display: none;
 }
 .peach {
@@ -967,27 +969,36 @@ body {
 audio {
 	display: none;
 }
+.bulbline{
+	width: 50%;
+	margin: auto;
+}
 
 .bannar {
-	max-width: 100%;
+	width: 100vw;
 	-webkit-transform:translate(0px,-500px);
 	-moz-transform:translate(0px,-500px);
 	-o-transform:translate(0px,-500px);
 	-ms-transform:translate(0px,-500px);
 	transform:translate(0px,-500px);
+	display: flex;
+	justify-content: space-between;
 
+}
+
+.navbannar{
+	display: block;
+	position: relative;
+	top: -95px;
+	width: 100%;
+
+
+	
 }
 .bannar-come {
 	-webkit-animation: bannar_come linear 6s;
-	-webkit-transform:translate(0px,0px);
-	-moz-animation: bannar_come linear 6s;
-	-moz-transform:translate(0px,0px);
-	-o-animation: bannar_come linear 6s;
-	-o-transform:translate(0px,0px);
-	-ms-animation: bannar_come linear 6s;
-	-ms-transform:translate(0px,0px);
-	animation: bannar_come linear 6s;
-	transform:translate(0px,0px);
+		-webkit-transform: translate(0px, 0px);
+
 }
 @-webkit-keyframes bannar_come {
 	0%{
